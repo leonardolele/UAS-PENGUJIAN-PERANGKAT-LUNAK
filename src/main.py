@@ -11,6 +11,12 @@ import os
 
 app = FastAPI(title="URL Shortener API")
 
+from fastapi import Response
+
+@app.get("/favicon.ico", include_in_schema=False)
+async def favicon():
+    return Response(content="", media_type="image/x-icon")
+
 # Jalankan init DB saat startup
 init_db()
 
