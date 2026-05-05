@@ -10,7 +10,7 @@ Aplikasi URL Shortener sederhana yang dibangun menggunakan Python, FastAPI, dan 
 
 Cara Menjalankan
 
-1. Persiapan Environment
+1. Persiapan Environmen
 Gunakan Virtual Environment untuk menjaga isolasi library:
 
 Windows:
