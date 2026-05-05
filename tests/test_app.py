@@ -18,7 +18,7 @@ def setup_and_teardown():
     if os.path.exists(TEST_DB):
         os.remove(TEST_DB)
 
-# --- UNIT TESTS (15) ---
+#  UNIT TESTS (15)
 def test_u1_len(): assert len(generate_short_code(8)) == 8
 def test_u2_alnum(): assert generate_short_code().isalnum()
 def test_u3_unique(): assert generate_short_code() != generate_short_code()
@@ -48,7 +48,7 @@ def test_u14_stats():
     assert get_stats("s1", TEST_DB)["short_code"] == "s1"
 def test_u15_stats_none(): assert get_stats("nil", TEST_DB) is None
 
-# --- INTEGRATION TESTS (7) ---
+#  INTEGRATION TESTS (7) 
 def test_i1_api_short():
     res = client.post("/api/shorten", json={"long_url": "https://bing.com"})
     assert res.status_code == 200

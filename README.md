@@ -22,7 +22,7 @@ macOS/Linux:
 python3 -m venv venv
 source venv/bin/activate
 
-2. Instalasi Dependencies
+2. Install Dependencies
 pip install -r requirements.txt
 
 3. Menjalankan Aplikasi
